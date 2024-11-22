@@ -1,5 +1,5 @@
 {
-  "name": "md2router",
+  "name": "md2vue",
   "version": "1.0.0",
   "type": "module",
   "description": "",
@@ -31,7 +31,7 @@
     "markdown",
     "vite",
     "vitepress",
-    "md2router"
+    "md2vue"
   ],
   "files": [
     "dist"

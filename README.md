@@ -7,7 +7,7 @@
 ## 1、使用
 
 ```shell
-npm add -D vite-plugin-md2router
+npm add -D vite-plugin-md2vue
 ```
 
 在`main.ts`/`main.js`中引用样式：
@@ -21,10 +21,10 @@ import "vite-plugin-vitepress/dist/theme";
 ```ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { MD2Router } from '../src';
+import { MD2Vue } from '../src';
 
 export default defineConfig({
-  plugins: [ MD2Router(), vue({ include: [/\.vue$/, /\.md$/] }) ]
+  plugins: [ MD2Vue(), vue({ include: [/\.vue$/, /\.md$/] }) ]
 })
 
 ```
@@ -35,7 +35,7 @@ export default defineConfig({
 
 ```ts
 export default defineConfig({
-  plugins: [MD2Router({
+  plugins: [MD2Vue({
     markdown: {
       lineNumbers: true, // 显示行号
       math: true,  // 支持数学公式

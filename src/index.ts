@@ -2,11 +2,11 @@ import { type PluginOption } from 'vite';
 import { type UserOptions } from "./typing";
 import { Parser } from "./parser";
 
-const MD2Router = (options?: UserOptions): PluginOption => {
+const MD2Vue = (options?: UserOptions): PluginOption => {
     const opt = options ?? {};
     let parser: Parser | undefined;
     return {
-        name: 'md2router',
+        name: 'md2Vue',
         async configResolved(_config) {
             parser = new Parser(_config, opt);
             await parser.setupRender();
@@ -18,6 +18,6 @@ const MD2Router = (options?: UserOptions): PluginOption => {
     }
 }
 
-export { MD2Router };
+export { MD2Vue };
 
-export default MD2Router;
+export default MD2Vue;
