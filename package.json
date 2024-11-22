@@ -1,6 +1,6 @@
 {
   "name": "md2vue",
-  "version": "1.0.1-beta.1",
+  "version": "1.0.0",
   "type": "module",
   "description": "",
   "main": "/distindex.js",
