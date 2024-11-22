@@ -1,9 +1,9 @@
 {
-  "name": "md2vue",
-  "version": "1.0.0",
+  "name": "vite-plugin-md2vue",
+  "version": "0.0.1",
   "type": "module",
   "description": "",
-  "main": "/distindex.js",
+  "main": "/dist/index.js",
   "module": "/dist/index.mjs",
   "types": "/dist/index.d.ts",
   "exports": {
@@ -25,7 +25,7 @@
     "preview:example": "vite preview example",
     "build": "tsup",
     "release": "bumpp",
-    "changelog": "changelogen -- output CHANGELOG.md"
+    "changelog": "changelogen --output CHANGELOG.md"
   },
   "keywords": [
     "markdown",
@@ -33,9 +33,7 @@
     "vitepress",
     "md2vue"
   ],
-  "files": [
-    "dist"
-  ],
+  "files": [ "dist" ],
   "author": "Triabin",
   "license": "ISC",
   "devDependencies": {
