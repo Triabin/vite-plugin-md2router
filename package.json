@@ -1,7 +1,6 @@
 {
-  "name": "vite-plugin-md2vue",
-  "version": "0.0.1",
-  "type": "module",
+  "name": "vite-plugin-mdtovue",
+  "version": "1.0.2",
   "description": "",
   "main": "/dist/index.js",
   "module": "/dist/index.mjs",
@@ -33,9 +32,12 @@
     "vitepress",
     "md2vue"
   ],
-  "files": [ "dist" ],
-  "author": "Triabin",
+  "files": [ "dist", "theme.d.ts" ],
+  "author": "",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@mistjs/eslint-config-vue": "^0.1.0",
     "@mistjs/tsconfig-vue": "^1.1.2",
@@ -52,5 +54,8 @@
     "vitepress": "^1.5.0",
     "vitest": "^2.1.5",
     "vue": "^3.5.13"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.5.0"
   }
 }

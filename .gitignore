@@ -4,3 +4,4 @@ example
 tests
 *.log
 *.local
+.npmrc

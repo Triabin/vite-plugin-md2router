@@ -7,13 +7,14 @@
 ## 1、使用
 
 ```shell
-npm add -D vite-plugin-md2vue
+npm add -D vitepress # 插件依赖于vitepress，请确保已安装
+npm add -D vite-plugin-mdtovue
 ```
 
 在`main.ts`/`main.js`中引用样式：
 
 ```ts
-import "vite-plugin-vitepress/dist/theme";
+import "vite-plugin-mdtovue/theme";
 ```
 
 在`vite.config.js`/`vite.config.ts`中配置插件和vue识别markdown文件：
@@ -21,7 +22,7 @@ import "vite-plugin-vitepress/dist/theme";
 ```ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { MD2Vue } from '../src';
+import { MD2Vue } from 'vite-plugin-mdtovue';
 
 export default defineConfig({
   plugins: [ MD2Vue(), vue({ include: [/\.vue$/, /\.md$/] }) ]
@@ -38,7 +39,7 @@ export default defineConfig({
   plugins: [MD2Vue({
     markdown: {
       lineNumbers: true, // 显示行号
-      math: true,  // 支持数学公式
+      math: true,  // 支持数学公式，需要额外安装markdown-it-mathjax3插件，具体参考vitepress文档
       codeCopyButtonTitle: '复制',  // 复制按钮显示文字
       config: (md: MarkdownIt) => {
         md.use(markdown - it插件1)
